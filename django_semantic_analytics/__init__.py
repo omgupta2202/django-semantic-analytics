@@ -1,0 +1,1 @@
+# django-semantic-analytics package

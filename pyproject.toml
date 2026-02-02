@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-semantic-analytics"
+version = "0.1.0"
+description = "Semantic RAG Middleware for Django Text-to-SQL"
+authors = [
+    { name = "Antigravity", email = "antigravity@example.com" }
+]
+dependencies = [
+    "django>=4.2",
+    "pgvector>=0.2.0",
+    "sqlglot>=20.0.0",
+    "openai>=1.0.0",
+    "psycopg2-binary>=2.9.0",
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["django_semantic_analytics*"]
